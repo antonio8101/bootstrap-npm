@@ -1,0 +1,20 @@
+.card-deck{
+  display: flex;
+  flex-direction: column;
+
+  .card{
+    min-width: 220px;
+  }
+
+  @include media-breakpoint-up(sm){
+
+    flex-direction: row;
+    flex-flow: row wrap;
+
+    .card{
+      margin-right: 15px;
+      margin-left: 15px;
+      flex: 1 0 0;
+    }
+  }
+}

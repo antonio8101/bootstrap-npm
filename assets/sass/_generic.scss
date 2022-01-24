@@ -1,0 +1,28 @@
+// Available breakpoints functions:
+//@include media-breakpoint-up(xxl) {  } // @media (min-width: 1400px)
+//@include media-breakpoint-down(xl)  {  } // @media (max-width: 1200px)
+//@include media-breakpoint-only(sm) {  } // @media (min-width: 576px) and (max-width: 767.98px)
+//@include media-breakpoint-between(md, xl) {  } //@media (min-width: 768px) and (max-width: 1199.98px)
+
+:root {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+.container{
+  max-width: 100%;
+}
+.pricing-header{
+  max-width: 700px;
+}
+a{
+  text-decoration: none;
+}
+
+.border-top { border-top: 1px solid #e5e5e5; }
+.border-bottom { border-bottom: 1px solid #e5e5e5; }
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
